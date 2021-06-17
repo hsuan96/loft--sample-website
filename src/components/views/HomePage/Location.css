@@ -1,0 +1,25 @@
+.location { 
+    padding: 5em 0;
+    background-color: var(--main-clr);
+}
+
+.location-title {
+    color: #fff;
+}
+
+.location-content {
+    color: #fff;
+    font-weight: 300;
+    width: 18em;
+}
+
+@media screen and (min-width: 860px) {
+    .location-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+}

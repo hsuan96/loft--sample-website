@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;600;800&family=Open+Sans:wght@300;500;600&family=Playball&display=swap');
+
+:root {
+  --main-clr: #184d47;
+  --main-clr-opacity: rgba(112, 175, 133, 0.3);;
+
+  --background-light: #eefbf6;
+
+  --font-logo: 'Playball', cursive;
+  --font-title: 'Inknut Antiqua', serif;
+  --font-content: 'Open Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: var(--main-clr);
+  font-family: var(--font-content);
+}
+
+h1, 
+h2, 
+h3 {
+  line-height: 1.5em;
+  padding: 1em 0;
+  font-family: var(--font-title);
+}
+
+
+h1 { 
+  font-size: 2rem;
+  font-weight: 600; 
+}
+
+h2 { 
+  font-size: 1.8rem;
+  font-weight: 600; 
+}
+
+h3 { 
+  font-size: 1.4rem;
+  font-weight: 400; 
+}
+
+
+p,
+span { 
+  line-height: 1.5em;
+  font-weight: 600; 
+  padding-bottom: 1.8em;
+  font-family: var(--font-content); 
+}
+
+button {
+  padding: 1em 2em;
+  font-size: 1em;
+  font-weight: 800;
+  background: #fff;
+  text-transform: uppercase;
+  border: 1px solid var(--main-clr);
+  box-shadow: 5px 5px var(--main-clr-opacity);
+  font-family: var(--font-content); 
+  cursor: pointer;
+}
+
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.scroll-container {
+  display: flex;  
+  overflow-x: scroll;
+}
+
+.scroll-container::-webkit-scrollbar {           
+  height: 10px;              
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background: var(--main-clr-opacity);   
+  border-radius: 10px;      
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: var(--main-clr);    
+  border-radius: 10px;      
+  border: 1px solid var(--main-clr-opacity); 
+}
+
+@media screen and (min-width: 1130px) {
+  .scroll-container::-webkit-scrollbar {
+      display: none;
+  }
+}
